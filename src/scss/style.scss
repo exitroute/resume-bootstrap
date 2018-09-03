@@ -2,3 +2,16 @@
 @import "~bootstrap/scss/bootstrap";
 
 
+// Index page //
+
+body {
+  background-color: #d59191;
+}
+
+.navbar-brand {
+  display: flex;
+}
+
+nav a {
+  justify-content: center;
+}
