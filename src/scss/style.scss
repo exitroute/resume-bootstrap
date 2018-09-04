@@ -2,16 +2,43 @@
 @import "~bootstrap/scss/bootstrap";
 
 
-// Index page //
 
-body {
-  background-color: #d59191;
+#about {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
 }
 
-.navbar-brand {
-  display: flex;
+.contact-row {
+  margin-bottom: 1rem;
 }
 
-nav a {
-  justify-content: center;
+.card-text {
+  font-size: small;
+}
+
+#skills-and-tools {
+  margin-bottom: 3rem;
+}
+
+#recent-work {
+  margin-bottom: 3rem; 
+}
+
+.man-exp-highlight {   
+  font-style: italic;
+}
+
+#management-experience {
+  margin-bottom: 3rem;
+}
+
+
+@media screen and (max-width: 576px) {
+  .man-exp-text {
+    font-size: small;
+  }
+}
+
+ul.man-exp-highlight {
+  padding: 0;
 }
