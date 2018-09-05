@@ -14,7 +14,7 @@
 
     <!-- navigation-->
 
-    <nav class="navbar navbar-light bg-light rounded">
+    <nav class="navbar navbar-light bg-light rounded" id="top">
         <a class="navbar-brand" href="#">Resume</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsResume" aria-controls="navbarsResume"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -28,10 +28,10 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="#skills-and-tools">Skills and Tools</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="#recent-work">Recent Work</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="#management-experience">Management Experience</a>
                 </li>
                 <li class="nav-item">
@@ -77,14 +77,17 @@
         </section>
 
         <section class="container" id="skills-and-tools">
-            <h2>
-                Skills and Tools
-            </h2>
+            <div class="d-flex w-100 justify-content-between">
+                <h2>Skills and Tools</h2>
+                <a href="#top">
+                    <small>top</small>
+                </a>
+            </div>
             <p>
                 Ryan brings the following set of skills and tools to the workplace:
             </p>
             <div class="row text-center card-group">
-                
+
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Development</h5>
@@ -106,12 +109,12 @@
                         </p>
                     </div>
                 </div>
-            
+
             </div>
             <!-- row -->
 
             <div class="row text-center card-group">
-                
+
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Technology</h5>
@@ -130,12 +133,13 @@
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                     </div>
                 </div>
-            
+
             </div>
             <!-- row -->
 
         </section>
-        <!-- id skillsandtools-->
+
+        <!-- recent work-->
 
         <section id="recent-work">
 
@@ -254,25 +258,33 @@
                     </div>
                 </div>
             </div>
-            <!--accordian-->
+            <!--accordian end-->
         </section>
-        <!-- id recent-work-->
+
 
         <!-- management experience-->
 
         <section id="management-experience" class="container">
             <h2>Management Experience</h2>
             <p>
-                Wall Street English (WSE) was an elearning and blended learning language teaching service active in Germany from 1995 until
-                December 2016, owned by Pearson Education. Student total in Berlin was approximately 15,000. Self made school
-                portrait here: Berlin Lesson 1.
+                <a href="https://www.wallstreetenglish.com" target="_blank">
+                    Wall Street English</a> (WSE) was an elearning and blended learning language teaching service active
+                in Germany from 1995 until December 2016, owned by Pearson Education.
+                <br>Student total in Berlin was approximately 15,000.
+                <p>
+                    Self made school portrait here:
+                    <br>
+                    <a href="https://vimeo.com/81486090" target="_blank">
+                        Berlin Lesson 1.
+                    </a>
+                </p>
             </p>
 
-            <div class="row man-exp-row justify-content-center">
+            <div class="row man-exp-row justify-content-center mb-5">
 
                 <!-- List group -->
                 <div class="col-sm-2 col-3">
-                    <div class="list-group text-center" id="myList" role="tablist">
+                    <div class="list-group text-center" id="listManExp" role="tablist">
                         <a class="list-group-item list-group-item-action active" data-toggle="list" href="#partFour" role="tab">
                             IV
                         </a>
@@ -346,9 +358,120 @@
             </div>
             <!-- row-->
 
+            <h3>Tasks and Responsibilities</h3>
+
+            <div class="row no-gutters">
+                <div class="col-sm-4 col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Task
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-8 col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-text">
+                                So this is the complicated task that gave me great pleasure in achieveing.
+                                <br> And the results were created loose change.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-4 col-12 bg-primary align-items-center">
+                    <h5 class="text-sm-center text-left">Task</h5>
+                </div>
+                <div class="col-sm-8 col-12">
+                    <p class="small mb-0">
+                        So this is the complicated task that gave me great pleasure in achieveing.
+                        <br> And the results were created loose change.
+                    </p>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-4 col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Task
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-8 col-12">
+                    <p class="small">
+                        So this is the complicated task that gave me great pleasure in achieveing.
+                        <br> And the results were created loose change.
+                    </p>
+                </div>
+            </div>
+            <br>
+
+            <!--management tasks accordion-->
+
+            <div class="accordion" id="listManTasks">
+                <div class="card">
+                    <div class="card-header" id="learningAndDev">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseLearningAndDev" aria-expanded="true"
+                                aria-controls="collapseLearningAndDev">
+                                Learning and Development
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="collapseLearningAndDev" class="collapse show" aria-labelledby="learningAndDev" data-parent="#listManTasks">
+
+                        <!--accordion content-->
+
+                        <div class="card-body small">
+                            <ul>
+                                <li>
+                                    <b>Responsibilities:</b> staff development, continuous improvement, staff onboarding, new
+                                    product and process training, L&amp;D objectives, school culture.
+                                </li>
+                                <li>
+                                    <b>Used</b> Pearson LMS, performance reviews, SMART goals, coaching, mentoring, workshops
+                                    and meetings, service design thinking and sprints..
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="recruitment">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseRecruitment" aria-expanded="false"
+                                aria-controls="collapseRecruitment">
+                                Recruitment
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseRecruitment" class="collapse" aria-labelledby="recruitment" data-parent="#listManTasks">
+                        <div class="card-body small">
+                            <ul>
+                                <li>
+                                    <b>Responsibilities:</b> candidate experience, profile development, resume screening, 1st and 2nd interviews, final selection, candidate feedback.
+                                </li>
+                                <li>
+                                    <b>Recruited</b> and hired 50 staff members (teachers, trainers and service support).
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
 
         </section>
-
+        <!-- id Management Experience-->
 
     </main>
     <!-- container-->
