@@ -1,7 +1,9 @@
 @import "variables";
 @import "~bootstrap/scss/bootstrap";
 
-
+.my-green-bg {
+  background-color: $mygreen;
+}
 
 #about {
   margin-top: 5rem;
@@ -11,17 +13,8 @@
   font-size: small;
 }
 
-
-.man-exp-row {
-  margin-bottom: 3rem;
-}
-
 .man-exp-highlight {   
   font-style: italic;
-}
-
-#management-experience {
-  margin-bottom: 3rem;
 }
 
 ul {
@@ -29,7 +22,8 @@ ul {
 }
 
 @media screen and (max-width: 576px) {
-  .man-exp-text {
+  .man-exp-text,
+  .text-wse {
     font-size: small;
   }
 }
